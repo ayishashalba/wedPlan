@@ -44,40 +44,6 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-40 bg-wed-ivory/95 backdrop-blur-md border-b border-stone-200/80 shadow-sm transition">
-      {/* Top Demo Bar / Quick Role Switcher for instant evaluator testing */}
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-          <span className="text-stone-300">
-            WedPlan Kerala Wedding Marketplace Demo — Switch persona:
-          </span>
-        </div>
-        <div className="flex items-center gap-3">
-          <button
-            onClick={() => switchDemoRole('customer')}
-            className={`px-2 py-0.5 rounded text-[11px] font-semibold transition ${isCustomer ? 'bg-wed-gold text-white' : 'text-stone-300 hover:text-white hover:bg-stone-800'
-              }`}
-          >
-            Customer (Anjali)
-          </button>
-          <span className="text-stone-600">|</span>
-          <button
-            onClick={() => switchDemoRole('vendor')}
-            className={`px-2 py-0.5 rounded text-[11px] font-semibold transition ${isVendor ? 'bg-wed-gold text-white' : 'text-stone-300 hover:text-white hover:bg-stone-800'
-              }`}
-          >
-            Vendor (Bolgatty Palace)
-          </button>
-          <span className="text-stone-600">|</span>
-          <button
-            onClick={() => switchDemoRole('admin')}
-            className={`px-2 py-0.5 rounded text-[11px] font-semibold transition ${isAdmin ? 'bg-wed-gold text-white' : 'text-stone-300 hover:text-white hover:bg-stone-800'
-              }`}
-          >
-            Platform Admin
-          </button>
-        </div>
-      </div>
 
 
       {/* Main Navbar */}
